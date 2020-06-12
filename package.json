@@ -1,0 +1,45 @@
+{
+  "name": "@beardedtim/arete",
+  "version": "0.0.0-DEVELOPMENT",
+  "description": "An Authorization/Authentication Service written in Node",
+  "main": "build/start.ts",
+  "repository": "git@github.com:beardedtim/arete.git",
+  "author": "Tim Roberts <timroberts@fastmail.org>",
+  "license": "WTFPL",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/getenv": "^1.0.0",
+    "@types/glob": "^7.1.2",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa__router": "^8.0.2",
+    "@types/node": "^14.0.13",
+    "@types/pino": "^6.0.1",
+    "@types/ramda": "^0.27.6",
+    "dotenv-flow": "^3.1.0",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@koa/router": "^9.0.1",
+    "bcrypt": "^5.0.0",
+    "getenv": "^1.0.0",
+    "glob": "^7.1.6",
+    "jsonschema": "^1.2.6",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.1",
+    "koa": "^2.12.0",
+    "koa-bodyparser": "^4.3.0",
+    "pg": "^8.2.1",
+    "pino": "^6.3.2",
+    "pino-pretty": "^4.0.0",
+    "ramda": "^0.27.0"
+  }
+}

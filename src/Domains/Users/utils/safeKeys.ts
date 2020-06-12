@@ -1,0 +1,1 @@
+export default new Set(['id', 'email', 'created_at', 'last_updated', 'meta'])
