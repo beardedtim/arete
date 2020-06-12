@@ -117,3 +117,15 @@ export const update_user = async (id: string, update: any, db: Knex, ctx: any) =
 }
 
 export const get_by_id = by_id
+
+export const delete_by_id = async (id: string, db: Knex, ctx: any) => {
+  // If there is no user or the user is not the
+  // user that is trying to delete itself
+  if (!ctx.user || ctx.user.id !== id) {
+    throw new AuthenticationError()
+  }
+
+  const [result] = await db.from('users').where({ id }).delete().returning(['id', 'email', 'meta'])
+
+  return result
+}
